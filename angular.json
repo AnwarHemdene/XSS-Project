@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "security-project"
+  "defaultProject": "security-project",
+  "cli": {
+    "analytics": false
+  }
 }
