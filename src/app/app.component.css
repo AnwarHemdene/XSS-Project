@@ -52,7 +52,7 @@
 
   .content {
     display: flex;
-    margin: 82px auto 32px;
+    margin: 60px auto 32px;
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;
@@ -80,11 +80,18 @@
   }
   .content-container {
     width: 64%;
-    height: 300px;
-    max-height: 300px;
+    max-height: 400px;
+    min-height: 400px;
     max-width: 615px;
   }
-
+  .info-img {
+    width: 100%;
+    max-height: 350px;
+  }
+  .header-text {
+    font-size: 17px;
+    text-align: center;
+  }
   .card {
     border-radius: 4px;
     border: 1px solid #eee;

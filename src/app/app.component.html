@@ -43,8 +43,14 @@
 
   <!-- Links -->
   <div class="card-container content-container">
-   <div *ngIf="selected===1">1</div>
-   <div *ngIf="selected===2">2</div>
+   <div *ngIf="selected === 1">
+     <p class="header-text">To successfully execute a stored XSS attack,
+       a perpetrator has to locate a vulnerability in a web application
+        and then inject malicious script into its server</p>
+     
+     <img class="info-img" src="./../assets/sorted-XSS.png"/>
+    </div>
+   <div *ngIf="selected === 2">2</div>
    <div *ngIf="selected===3">3</div>
   </div>
 
