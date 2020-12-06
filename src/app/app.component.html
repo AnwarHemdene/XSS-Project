@@ -32,7 +32,7 @@
     <div class="card card-small" (click)="onSelect(2)" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-      <span>Exemple</span>
+      <span>Exemples</span>
     </div>
 
     <div class="card card-small" (click)="onSelect(3)" tabindex="0">
@@ -50,7 +50,21 @@
      
      <img class="info-img" src="./../assets/sorted-XSS.png"/>
     </div>
-   <div *ngIf="selected === 2">2</div>
+   <div *ngIf="selected === 2">
+     <div>
+       <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Post your description</mat-label>
+        <textarea matInput placeholder="Ex. description here..." #box (blur)="update(box.value)"></textarea>
+      </mat-form-field>
+    </form>
+     </div>
+     <div>
+      <mat-list>
+        <mat-list-item *ngFor="let item of list">* {{item}} </mat-list-item>
+       </mat-list>
+     </div>
+   </div>
    <div *ngIf="selected===3">3</div>
   </div>
 
